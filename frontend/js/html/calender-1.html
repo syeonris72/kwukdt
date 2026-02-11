@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2월 달력</title>
+    <style>
+        table, th, td{
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        table{
+            margin: 0 auto;
+        }
+        th{
+            width: 100px;
+            height: 30px;
+            background-color: #ddd;
+        }
+        th:nth-of-type(1){
+            background-color: #dba8a8;
+        }
+        th:nth-last-of-type(1){
+            background-color: #a8b6db;
+        }
+        td{
+            width: 100px;
+            height: 100px;
+        }
+        caption{
+            text-align: left;
+            margin: 10px 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>2026. 02.</caption>
+        <thead>
+            <tr>
+                <th>일</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+                <th>토</th>
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                let date = 1
+                for (let week = 1; week <= 4; week++){
+                    document.write(`<tr>`)
+                    for (let day = 0; day <= 6; day++){
+                        document.write(`<td>${date+day}</td>`)
+                    }
+                    date = date + 7
+                    document.write(`</tr>`)
+                }
+                /* 다른 방식
+                let date = 1
+                for (let week = 1; week <= 4; week++){
+                    document.write(`<tr>`)
+                    for (let day = 1; day <= 7; day++){
+                        document.write(`<td>${date}</td>`)
+                        date++
+                    }
+                    document.write(`</tr>`)
+                }
+                */
+            </script>
+        </tbody>
+    </table>
+</body>
+</html>

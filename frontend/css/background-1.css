@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body{
+    font-family: Dotum, "돋움", sans-serif;
+    line-height: 150%;
+    background-color: darkslategray;
+    background-image: url(../html/images/imgi_86_izX427_20251205163551833.png);
+    background-repeat: no-repeat;
+    background-position: 100% top;
+    background-attachment: fixed;
+}
+
+
+h1{
+    font-size: 20px;
+    color: white;
+}
+
+h2{
+    font-size: 15px;
+    background: darkcyan url(../html/images/imgi_128_msr_star_bg.png) no-repeat 5px 5px;
+    background-size: 15px;
+    text-indent: 25px;
+
+}
+
+p{
+    font-size: 12px;
+    color:white;
+}
+
+.title_01{
+    color: lightpink;
+}
+
+.title_02{
+    color: lightsalmon;
+}
+
+.title_03{
+    color: cornsilk;
+}
+
+.title_04{
+    color: lightcyan;
+}
+
+.title_05{
+    color: lightblue;
+}
+
+.title_06{
+    color: lightsteelblue;
+}
+
+.title_07{
+    color: lightpink;
+}
