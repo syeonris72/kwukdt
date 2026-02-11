@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신규 입점</title>
+    <style>
+        table, th, td{border: 1px solid black}
+    </style>
+</head>
+<body>
+    <h2>신규 입점 제의 상담 신청</h2>
+    <strong>* 필수 입력</strong>
+    <form action="/" method="post">
+        <fieldset>
+            <legend>필수 입력 항목</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">점포 구분<strong>*</strong></th>
+                        <td>
+                            <input id="normal" type="radio" name="division">
+                            <label for="normal">일반 (일반 건물에 입점 매장)</label>
+                            <input id="drivethrough" type="radio" name="division">
+                            <label for="drivethrough">드라이브스루 (차량을 이용한 주문 가능 매장)</label>
+                            <input id="land" type="radio" name="division">
+                            <label for="land">토지 (신축 단독매장)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">추천인 구분<strong>*</strong></th>
+                        <td>
+                            <input id="principal" type="radio" name="suggestion">
+                            <label for="principal">임대인 본인 (소유권자)</label>
+                            <input id="deputy" type="radio" name="suggestion">
+                            <label for="deputy">대리인 (부동산, 에이전트)</label>
+                            <input id="acquaintance" type="radio" name="suggestion">
+                            <label for="acquaintance">임대인 지인인 (가족, 지인)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">추천점포 주소<strong>*</strong></th>
+                        <td>
+                            <input type="button" value="주소 찾기">
+                            <input type="text" size="50" disabled>
+                            <input type="text" size="60" title="상세주소 입력">
+                            *주소 검색이 안되실 경우에 추천 주소(시, 군, 구)를 임의로 선택 후 상세주소에 실제 주소를 입력하시거나 아래 기타상세에 별도로 입력하여 주시면 담당자가 확인 가능합니다.
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">이름<strong>*</strong></th>
+                        <td>홍길동</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">연락처<strong>*</strong></th>
+                        <td>010-****-1234</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="email">이메일<strong>*</strong></label>
+                        </th>
+                        <td>
+                            <input id="email" type="email" title="이메일 입력"> @
+                            <input type="email" title="이메일 서비스 회사">
+                            <select title="이메일 서비스 회사">
+                                <option>직접 입력</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="daum.net">daum.net</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label for="landarea">면적<strong>*</strong></label>
+                        </th>
+                        <td>
+                            <input id="landarea" type="tel" placeholder="토지면적을 입력해주세요.">평
+                            <input type="tel" placeholder="전용면적을 입력해주세요.">평
+                            <input type="text" placeholder="예시: 1층/1~3층">층
+                            *전용면적: 건물 내 실 면적
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="leaseConditions">희망 임대조건<strong>*</strong></label></th>
+                        <td>
+                            <input id="leaseConditions" type="tel" placeholder="보증금을 입력해주세요.">원
+                            <input type="tel" placeholder="임대료를 입력해주세요.">원
+                            <input type="tel" placeholder="희망 수수료를 입력해주세요.">%
+                            <input type="tel" placeholder="관리비를 입력해주세요.">원
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="explanation">기타상세<strong>*</strong></label></th>
+                        <td>
+                            <textarea id="explanation" cols="100" rows="5">:입점 신청 주소지 주변 상권에 대한 상세 설명
+:임차료 협의 가능 여부
+:복수 층일 경우 층별 면적 등
+:상권/물건과 관련된 사항 외 개인정보 작성 금지
+                            </textarea>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li>입력된 정보가 부정확할 경우 입점 검토가 제한될 수 있습니다.</li>
+                <li>검토 결과는 인증된 연락처로 발송된 SMS, 이메일과 홈페이지에서 확인할 수 있습니다.</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>부가 내용</legend>
+            <ul>
+                <li>신규입점제의는 일일 10회로 제한됩니다.</li>
+                <li>신규입점제의에 대한 회신은 기재하신 이메일 및 SMS로 회신드립니다.</li>
+                <li>문자수신거절, 이메일 불분명 등의 경우 회신이 불가하므로 홈페이지에서 확인하여 주시길 바랍니다.</li>
+                <li>내부사정에 따라 회신이 지연될 수 있으며, 이경우 다시 신청하여 주시길 바랍니다.</li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="신청">
+        <input type="reset" value="취소">
+    </form>
+</body>
+</html>

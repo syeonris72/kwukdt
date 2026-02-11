@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네이버 : 로그인</title>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1>Naver</h1>
+        </header>
+        <main id="container">
+            <form action="/" method="POST">
+                <fieldset>
+                    <legend>ID/전화번호</legend>
+                    <ol>
+                        <li>
+                            <label for="userId">아이디 또는 전화번호</label>
+                            <input id="userId" type="text" placeholder="아이디 또는 전화번호">
+                        </li>
+                        <li>
+                            <label for="pwd">비밀번호</label>
+                            <input id="pwd" type="password" placeholder="비밀번호">
+                        </li>
+                        <li>
+                            <label for="loginChk">로그인 상태 유지</label>
+                            <input id="loginChk" type="checkbox">
+                        </li>
+                        <li>
+                            <input id="login" type="submit" value="로그인">
+                        </li>
+                        <li>
+                            <span>
+                                지문 또는 얼굴 인증을 설정했다면
+                                <input id="passKeylogin" type="submit" value="패스키 로그인">
+                            </span>
+                        </li>
+                    </ol>
+                </fieldset>
+                <ul>
+                    <li>
+                        <a href="#">
+                            비밀번호 찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            아이디 찾기
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            회원가입
+                        </a>
+                    </li>
+                </ul>
+            </form>
+        </main>
+        <footer id="footer">
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신규 입점</title>
+    <style>
+        table, th, td{border: 1px solid black}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1>Store Lease</h1>
+        </header>
+        <main id="container">
+            <h2>신규 입점 제의 상담 신청</h2>
+            <table>
+                <tr>
+                    <th>점포 구분*</th>
+                    <td>
+                        <form>
+                            <input type="radio" name="division">일반 (일반 건물에 입점 매장)
+                            <input type="radio" name="division">드라이브스루 (차량을 이용한 주문 가능 매장)
+                            <br>
+                            <input type="radio" name="division">토지 (신축 단독매장)
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th>추천인 구분*</th>
+                    <td>
+                        <form>
+                            <input type="radio" name="suggestion">임대인 본인 (소유권자)
+                            <input type="radio" name="suggestion">대리인 (부동산, 에이전트)
+                            <input type="radio" name="suggestion">임대인 지인인 (가족, 지인)
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th>추천점포 주소*</th>
+                    <td>
+                        <form>
+                            <button>주소찾기</button>
+                            <input type="text" required>
+                            <p>* 주소 검색이 안되실 경우에 추천 주소(시, 군, 구)를 임의로 선택 후 상세주소에 실제 주소를 입력하시거나 아래 기타상세에 별도로 입력하여 주시면 담당자가 확인 가능합니다.</p>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th>이름*</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>연락처*</th>
+                    <td>010-****-</td>
+                </tr>
+                <tr>
+                    <th>이메일*</th>
+                    <td>
+                        <form>
+                            <input id="userMail" type="text" size="7" required required>
+                            <label for="email">@</label>
+                            <input type="text" size="10" required>
+                            <select id="email" required required>
+                                <option>직접 입력</option>
+                                <option>gmail.com</option>
+                                <option>naver.com</option>
+                                <option>kakao.com</option>
+                                <option>daum.com</option>
+                                <option>hanmail.com</option>
+                                <option>nate.com</option>
+                                <option>hotmail.com</option>
+                            </select>
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <th>면적*</th>
+                    <td>
+                        <input type="text" size="20" placeholder="토지면적을 입력해주세요." required>평
+                        <input type="text" size="20" placeholder="전용면적을 입력해주세요" required>평
+                        <input type="text" size="20" placeholder="예시: 1층 / 1~3층" required>층
+                        <br>
+                        <p>*전용면적: 건물 내 실 면적</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>희망 임대조건*</th>
+                    <td>
+                        <input type="text" size="20" placeholder="보증금을 입력해주세요" required>원
+                        <input type="text" size="20" placeholder="임대료를 입력해주세요" required>원
+                        <br>
+                        <input type="number" min="0" max="100" placeholder="희망 수수료율을 입력해주세요" required>%
+                        <br>
+                        <input type="text" size="20" placeholder="관리비를 입력해주세요." required>원
+                    </td>
+                </tr>
+                <tr>
+                    <th>기타상세*</th>
+                    <td>
+                        <textarea placeholder=":입점 신청 주소지 주변 상권에 대한 상세 설명
+                                                    :임차료 협의 가능 여부
+                                                    :복수 층일 경우 층별 면적 등
+                                                    :상권/물건과 관련된 사항 외 개인정보 작성 금지"
+                                                    cols="50" rows="7"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <ul>
+                <li>입력된 정보가 부정확할 경우 입점 검토가 제한될 수 있습니다.</li>
+                <li>검토 결과는 인증된 연락처로 발송된 SMS, 이메일과 홈페이지에서 확인할 수 있습니다.</li>
+            </ul>
+            <table>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>신규입점제의는 일일 10회로 제한됩니다.</li>
+                            <li>신규입점제의에 대한 회신은 기재하신 이메일 및 SMS로 회신드립니다.</li>
+                            <li>문자수신거절, 이메일 불분명 등의 경우 회신이 불가하므로 홈페이지에서 확인하여 주시길 바랍니다.</li>
+                            <li>내부사정에 따라 회신이 지연될 수 있으며, 이경우 다시 신청하여 주시길 바랍니다.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="신청">
+            <input type="reset" value="취소">
+        </main>
+        <footer id="footer">
+        </footer>
+    </div>
+</body>
+</html>
