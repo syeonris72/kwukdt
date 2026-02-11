@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            margin: 20px 0;
+        }
+        li>a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-shadow: 0 -1px 1px #555;
+            box-shadow: 0 1px 3px #999;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            position:relative;
+        }
+        .blue{
+            background-color: #3cadda;
+        }
+        .red{
+            background-color: #e33100;
+        }
+        .yellow{
+            background-color: #ffb515;
+        }
+        a.blue:hover{
+            background-color: #2e657a;
+        }
+        a.red:hover{
+            background-color: #872300;
+        }
+        a.yellow:hover{
+            background-color: #a07f39;
+        }
+        a:active{
+            top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="blue">Blue Button &raquo;</a></li>
+        <li><a class="red">Red Button &raquo;</a></li>
+        <li><a class="yellow">Yellow Button &raquo;</a></li>
+    </ul>
+</body>
+</html>

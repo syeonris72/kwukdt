@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear 속성</title>
+    <style>
+        div{
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #wrap{
+            width: 600px;
+            height: 600px;
+            background-color: lightgray;
+        }
+        #red{
+            width: 600px;
+            height: 100px;
+            background-color: lightcoral;
+        }
+        #yellow{
+            float: left;
+            width: 300px;
+            height: 400px;
+            background-color: lemonchiffon;
+        }
+        #green{
+            float: left;
+            width: 300px;
+            height: 400px;
+            background-color: darkseagreen
+        }
+        #blue{
+            clear: both;
+            width: 600px;
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+    <div id="red">Red</div>
+    <div id="yellow">Yellow</div>
+    <div id="green">Green</div>
+    <div id="blue">Blue</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform 속성</title>
+    <style>
+        img{
+            margin: 100px;
+        }
+        .rotate1{
+            transform: rotate(0);
+        }
+        .rotate1:hover{
+            transform: rotate(45deg);
+        }
+
+        .rotate2{
+            transform: rotate(0);
+        }
+        .rotate2:hover{
+            transform: rotate(-45deg);
+        }
+        .scale{
+            transform: scale(1);
+        }
+        .scale:hover{
+            transform: scale(2);
+        }
+
+        .skewX{
+            transform: skewX(0deg);
+        }
+        .skewX:hover{
+            transform: skewX(15deg);
+        }
+
+        .skewY{
+            transform: skewY(0deg);
+        }
+        .skewY:hover{
+            transform: skewY(15deg);
+        }
+
+        .skew{
+            transform: skew(0deg,0deg);
+        }
+        .skew:hover{
+            transform: skew(15deg,15deg);
+        }
+
+        .translateX{
+            transform: translateX(0);
+        }
+        .translateX:hover{
+            transform: translateX(200px);
+        }
+
+        .translateY{
+            transform: translateY(0);
+        }
+        .translateY:hover{
+            transform: translateY(200px);
+        }
+
+        .translate{
+            transform: translate(0,0);
+        }
+        .translate:hover{
+            transform: translate(200px,200px);
+        }
+
+        .origin{
+            transform:rotate(15deg);
+            transform-origin:left top;/* 중심축 */
+            transition:transform 1s ease 0s;
+        }
+        .origin:hover{
+            transform:rotate(180deg);
+        }
+
+        figure{
+            display:block;
+            perspective:1600px;
+            border:1px solid blue;
+        }
+        .translateZ{
+            transform:translateZ(0);
+            border:1px solid red;
+            transition: transform 1s ease 0s;
+        }
+        .translateZ:hover{
+            transform: translateZ(500px);
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <img  class="rotate1" src="../../html/images/imgi_128_msr_star_bg.png" alt="">
+        <img  class="rotate2" src="../../html/images/imgi_128_msr_star_bg.png" alt="">
+        <img  class="scale" src="../../html/images/imgi_128_msr_star_bg.png" alt="">
+        <img  class="skew" src="../../html/images/imgi_128_msr_star_bg.png" alt="">
+        <img  class="translate" src="../../html/images/imgi_128_msr_star_bg.png" alt="">
+        <img  class="origin" src="../../html/images/imgi_128_msr_star_bg.png" alt="">
+        <img  class="translateZ" src="../../html/images/imgi_128_msr_star_bg.png" alt="">
+    </figure>
+</body>
+</html>

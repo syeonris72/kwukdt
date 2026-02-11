@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input[type="text"]{
+            border: 2px solid #00f
+        }
+        input[type="password"]{
+            border: 2px solid #00f
+        } */
+        input:not([type="submit"]){
+            border: 2px solid #00f;
+        }
+        input:has([type="submit"]){
+            border: 2px solid #F00;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <label for="userId">아이디</label>
+            <input type="text" id="">
+        </li>
+        <li><label for="userpw">비밀번호</label>
+            <input type="password" id="userpw">
+        </li>
+        <li><label for="submit">로그인</label>
+            <input type="submit" id="submit">
+        </li>
+    </ul>
+</body>
+</html>

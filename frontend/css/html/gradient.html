@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient 속성</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+        }
+        .grad{
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            background: repeating-linear-gradient(#000, #000 20px, #fff 20px, #fff 40px);
+        }
+        .grad1{
+            background-color: #FFF;
+            background: linear-gradient(to bottom, rgb(255, 127, 127), rgb(127, 127, 255));
+        }
+        .grad2{
+            background-color: #FFF;
+            background: linear-gradient(to right bottom, rgb(255, 127, 127), rgb(127, 127, 255));
+        }
+        .grad3{
+            background-color: #FFF;
+            background: linear-gradient(45deg, rgb(255, 127, 127) 0%, rgb(255, 250, 175) 50%, rgb(127, 127, 255) 100%);
+        }
+        .grad4{
+            background-color: #FFF;
+            background: linear-gradient(45deg, #ff5454 0%, #fff898 20%, #a0ff8d 40%, #98fff8 60%, #6b6bff 80%, #ff84ff 100%);
+        }
+        .grad5{
+            background-color: #FFF;
+            background: radial-gradient(#ff5454, #ffffff);
+        }
+        .grad6{
+            width: 400px;
+            background-color: #FFF;
+            background: radial-gradient(circle, #ff5454, #ffffff);
+        }
+        .grad7{
+            width: 400px;
+            background-color: #FFF;
+            background: radial-gradient(closest-side circle at 30% 30%, #fff9a4, #fffddf, #373c58);
+        }
+        .grad8{
+            width: 400px;
+            background-color: #FFF;
+            background: radial-gradient(closest-corner circle at 30% 30%, #fff9a4, #fffddf, #373c58);
+        }
+        .grad9{
+            width: 400px;
+            background-color: #FFF;
+            background: radial-gradient(farthest-side circle at 30% 30%, #fff9a4, #fffddf, #373c58);
+        }
+        .grad10{
+            width: 400px;
+            background-color: #FFF;
+            background: radial-gradient(farthest-corner circle at 30% 30%, #fff9a4, #fffddf, #373c58);
+        }
+        .grad11{
+            background-color: #FFF;
+            background: repeating-linear-gradient(#fff9a4, #fff9a4 20px, #fffddf 20px, #fffddf 40px);
+        }
+        .grad12{
+            background-color: #FFF;
+            background: repeating-radial-gradient(#fff9a4, #fff9a4 20px, #fffddf 20px, #fffddf 40px);
+        }
+        .grad13{
+            background-color: #FFF;
+            color: black;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 100px;
+            background: linear-gradient(to bottom, #f0f9ff 0%,#cbebff 31%,#a1dbff 60%);
+        }
+    </style>
+</head>
+<body>
+    <div class="grad"></div>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+    <div class="grad4"></div>
+    <div class="grad5"></div>
+    <div class="grad6"></div>
+    <div class="grad7"></div>
+    <div class="grad8"></div>
+    <div class="grad9"></div>
+    <div class="grad10"></div>
+    <div class="grad11"></div>
+    <div class="grad12"></div>
+    <div class="grad13">Button</div>
+</body>
+</html>

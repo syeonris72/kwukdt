@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Size</title>
+    <style>
+        div{
+            float: left;
+            width: 100px;
+            height: 100px;
+            padding: 10px 5px;
+            border: 2px solid blue;
+        }
+        .bg1{
+            background: url(../../html/images/imgi_128_msr_star_bg.png) no-repeat 100% 0;
+            resize: both;
+            overflow: hidden;
+            background-size: 189px 170px, 86px,146px;
+        }
+        .bg2{
+            background: url(../../html/images/imgi_128_msr_star_bg.png) no-repeat 100% 0, url(../../html/images/imgi_129_icon_msr_cup.png);
+            background-size: 50% 50%, 20% 20%;
+            resize: both;
+            overflow: hidden;
+        }
+        .bg3{
+            width: 240px;
+            height: 240px;
+            background: url(../../html/images/imgi_128_msr_star_bg.png) no-repeat 100% 0;
+            background-size: cover;
+        }
+        .bg4{
+            width: 200px;
+            height: 200px;
+            background: url(../../html/images/imgi_128_msr_star_bg.png) no-repeat 100% 0;
+            background-size: contain;
+        }
+        .bg6{
+            width: 550px;
+            padding: 25px;
+            border: 15px double rgba(0, 0, 0, 0.6);
+            background: url(../../html/images/imgi_128_msr_star_bg.png) no-repeat 0 0;
+            background-origin: content-box;
+        }
+        .bg7{
+            width: 550px;
+            padding: 25px;
+            border: 15px double rgba(0, 0, 0, 0.6);
+            background: rgb(235, 192, 192);
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <p><img src="../../html/images/imgi_128_msr_star_bg.png" alt=""></p>
+    <div class="bg1">
+        <p>배경 이미지를 <br /> div 크기의 <br /> 90% 90%로 했을 때</p>
+    </div>
+    <div class="bg2">
+        <p>배경 이미지를 <br /> 150px 120px로 했을 때</p>
+    </div>
+    <div class="bg3">Cover</div>
+    <div class="bg4">Contain</div>
+    <div class="bg5">원본</div>
+    <div class="bg6">background-origin</div>
+    <div class="bg7">background-clip</div>
+</body>
+</html>

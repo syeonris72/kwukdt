@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position absolute</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #outer{
+            width: 600px;
+            border: 5px solid lightcoral;
+            position: relative;
+            z-index: 150;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 5px solid lightgray;
+        }
+        #box1{
+            background-color: lightcoral;
+            z-index: 3;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+        }
+        #box2{
+            background-color: lightsalmon;
+            z-index: 2;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        #box3{
+            background-color: lightgoldenrodyellow;
+            z-index: 1;
+            position: absolute;
+            left: 150px;
+            top: 150px;
+        }
+        #side{
+            background-color: darkseagreen;
+            z-index: 100;
+            position: absolute;
+            left: 200px;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div class="box" id="box1">Box1</div>
+        <div class="box" id="box2">Box2</div>
+        <div class="box" id="box3">Box3</div>
+    </div>
+    <div class="box" id="side">sideBox</div>
+</body>
+</html>
