@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POPUP</title>
+</head>
+<body>
+    <img src="../img/popup.png" usemap="#pop" alt="Starbucks Christmas">
+    <map name="pop" id="pop">
+        <area shape="rect" coords="580, 1090, 780, 1150" href="#" id="close-area" alt="창 닫기">
+    </map>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const closeArea = document.querySelector("#close-area")
+            if (closeArea){
+                closeArea.addEventListener('click', () => {
+                    window.close()
+                })
+            }
+        })
+    </script>
+</body>
+</html>

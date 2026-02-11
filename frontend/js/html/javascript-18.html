@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div id="theBox">
+        <h1>요소 생성 연습</h1>
+        <!--
+        <p>
+            <button id="btn1">버튼1</button>
+            <button id="btn2">버튼2</button>
+        </p>
+        -->
+    </div>
+    <script>
+        const newPtag = document.createElement("p")
+        const newButton1 = document.createElement("button")
+        const newButton2 = document.createElement("button")
+        newButton1.id = "btn1"
+        newButton2.id = "btn2"
+        newButton1.textContent = "버튼1"
+        newButton2.textContent = "버튼2"
+        newPtag.append(newButton1, newButton2)
+    </script>
+</body>
+</html>

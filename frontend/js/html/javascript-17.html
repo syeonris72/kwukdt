@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <h2>screen 객체: 사용자의 화면 정보</h2><hr>
+    <p>화면 너비: <span id="width"></span>픽셀</p>
+    <p>화면 높이: <span id="height"></span>픽셀</p>
+    <p>사용 가능한 너비: <span id="availWidth"></span>픽셀</p>
+    <p>사용 가능한 높이: <span id="availHeight"></span>픽셀</p>
+    <p>색상 비트 수: <span id="colorDepth"></span>비트</p>
+    <hr>
+    <script>
+        document.querySelector('#width').textContent = screen.width
+        document.querySelector('#height').textContent = screen.height
+        document.querySelector('#availWidth').textContent = screen.availWidth
+        document.querySelector('#availHeight').textContent = screen.availHeight
+        document.querySelector('#colorDepth').textContent = screen.colorDepth
+    </script>
+</body>
+</html>

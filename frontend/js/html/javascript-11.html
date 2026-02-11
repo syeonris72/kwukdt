@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerWidth</title>
+    <style>
+        div{
+            background-color: #ffe;
+            border: 1px solid #9cc;
+            padding: 10px 30px;
+        }
+        .flex_font{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <b>innerWidth 미사용</b>: 웹 브라우저 창을 양 옆으로 늘리거나 줄여도 폰트의 크기가 변하지 않음
+    </div>
+    <div class="flex_font" id="resizeFont">
+        <b>innerWidth 사용</b>: 웹 브라우저 창을 양 옆으로 늘리거나 줄이면 창 크기에 따라 폰트의 크기가 변함
+    </div>
+    <script>
+        const adjustFont = () => {
+            const divBox = document.querySelector('#resizeFont')
+            const width = window.innerWidth
+            console.log(`window.innerWidth: ${width}`)
+            if (width <= 600) {
+                divBox.style.fontSize = '12px'
+            }else if (width <= 700) {
+                divBox.style.fontSize = '16px'
+            }else {
+                divBox.style.fontSize = '20px'
+            }
+        }
+        window.addEventListener('resize', () => adjustFont())
+    </script>
+</body>
+</html>

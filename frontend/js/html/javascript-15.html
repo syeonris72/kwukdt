@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window</title>
+</head>
+<body>
+    <input type="button" value="윈도우 만들기"><br>
+    <input type="button" value="윈도우 위로"><br>
+    <input type="button" value="윈도우 오른쪽으로"><br>
+    <input type="button" value="윈도우 아래로"><br>
+    <input type="button" value="윈도우 왼쪽으로"><br>
+    <input type="button" value="윈도우 닫기"><br>
+    <script>
+        let newWin = null
+
+        const openWin = () => {
+            const specs = "width = 300, height = 200"
+            newWin = window.open("", "", specs)
+
+            if (newWin) {
+                newWin.document.write("움직이는 윈도우")
+                newWin.moveTo(300, 300)
+            }
+        }
+
+        const upWin = () => {
+            if (newWin) {
+                newWin.moveBy(0, -10)
+            }
+        }
+
+        const rightWin = () => {
+            if (newWin) {
+                newWin.moveBy(10, 0)
+            }
+        }
+
+        const downWin = () => {
+            if (newWin) {
+                newWin.moveBy(0, 10)
+            }
+        }
+        
+        const leftWin = () => {
+            if (newWin) {
+                newWin.moveBy(-10, 0)
+            }
+        }
+
+        const closeWin = () => {
+            if (newWin) {
+                newWin.close()
+                newWin = null
+            }
+        }
+
+        document.querySelector('input[value="윈도우 만들기"]').addEventListener('click', openWin)
+        document.querySelector('input[value="윈도우 위로"]').addEventListener('click', upWin)
+        document.querySelector('input[value="윈도우 오른쪽으로"]').addEventListener('click', rightWin)
+        document.querySelector('input[value="윈도우 아래로"]').addEventListener('click', downWin)
+        document.querySelector('input[value="윈도우 왼쪽으로"]').addEventListener('click', leftWin)
+        document.querySelector('input[value="윈도우 닫기"]').addEventListener('click', closeWin)
+    </script>
+</body>
+</html>

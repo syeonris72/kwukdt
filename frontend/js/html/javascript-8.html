@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Price</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const resultArea = document.querySelector("#Area")
+
+            const stdName = prompt('학생 이름을 입력하세요.')
+            const stdId = prompt('학번을 입력하세요.')
+            const korScore = parseInt(prompt('국어 점수를 입력하세요.'))
+            const engScore = parseInt(prompt('영어 점수를 입력하세요.'))
+            const mathScore = parseInt(prompt('수학 점수를 입력하세요.'))
+
+            const getSum = () => {
+                return korScore + engScore + mathScore
+            }
+            const getAvg = () => {
+                return Math.floor((korScore + engScore + mathScore)/3)
+            }
+            const getRank = () => {
+                const scoreAvg = Math.floor((korScore + engScore + mathScore)/3)
+                if(scoreAvg >= 90){
+                    return "A"
+                }else if(scoreAvg >= 80){
+                    return "B"
+                }else if(scoreAvg >= 70){
+                    return "C"
+                }else if(scoreAvg >= 60){
+                    return "D"
+                }else{
+                    return "F"
+                }
+            }
+
+            const sum = getSum()
+            const avg = getAvg()
+            const rank = getRank()
+
+            resultArea.innerHTML = `<strong>${stdName} | ${stdId}</strong><br>국어 점수: ${korScore}점 | 영어 점수: ${engScore}점 | 수학 점수: ${mathScore}점<br>합계: ${sum} | 평균: ${avg} | 학점: ${rank}`
+        })
+    </script>
+</head>
+<body>
+    <div id="Area">   </div>
+</body>
+</html>

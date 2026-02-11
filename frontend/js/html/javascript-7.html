@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Price</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const input1 = document.querySelector("#product1")
+            const input2 = document.querySelector("#product1")
+            const input3 = document.querySelector("#product1")
+            const input4 = document.querySelector("#product1")
+            const input5 = document.querySelector("#product1")
+            const totalBtn = document.querySelector('#totalBtn')
+            const saleBtn = document.querySelector('#saleBtn')
+            const totalDisplay = document.querySelector('#total')
+            const saleDisplay = document.querySelector('#sale')
+
+            const calculateTotal = () => {
+                const price1 = Number(input1.value)
+                const price2 = Number(input2.value)
+                const price3 = Number(input3.value)
+                const price4 = Number(input4.value)
+                const price5 = Number(input5.value)
+                return price1 * 3000 + price2 * 3000 + price3 * 2000 + price4 * 4000 + price5 * 1000
+            }
+            totalBtn.addEventListener('click', () => {
+                event.preventDefault()
+                const sum = calculateTotal()
+                totalDisplay.value = sum.toLocaleString()
+            })
+
+            saleBtn.addEventListener('click', () => {
+                event.preventDefault()
+                const sum = calculateTotal()
+                const DISCOUNT_RATE = 0.85
+                const discountedPrice = Math.floor(sum * DISCOUNT_RATE)
+                saleDisplay.value = discountedPrice.toLocaleString()
+            })
+        })
+    </script>
+</head>
+<body>
+    <form id=saleform action="/" method="post">
+        <legend>음식 주문 계산서</legend>
+        <ul>
+            <li>
+                <label for="product1">떡볶이</label>
+                <input type="number" id="product1">인분 (1인분/3,000원)
+            </li>
+            <li>
+                <label for="product2">순대</label>
+                <input type="number" id="product2">인분 (1인분/3,000원)
+            </li>
+            <li>
+                <label for="product3">튀김</label>
+                <input type="number" id="product3">개 (1개/2,000원)
+            </li>
+            <li>
+                <label for="product4">김밥</label>
+                <input type="number" id="product4">줄 (1줄/4,000원)
+            </li>
+            <li>
+                <label for="product5">어묵</label>
+                <input type="number" id="product5">개 (1개/1,000원)
+            </li>
+            <li>
+                <button id="totalBtn">합계</button>
+                <input type="text" id="total">원
+            </li>
+            <li>
+                <button id="saleBtn">15% 할인 적용가</button>
+                <input type="text" id="sale">원
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

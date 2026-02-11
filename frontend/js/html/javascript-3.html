@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Gallery</title>
+    <style>
+        .imgBox{
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            width: 330px;
+            height: 330px;
+        }
+    </style>
+</head>
+<body>
+    <div id="galleryWrap">
+        <h1>이미지 넘기기</h1>
+        <img src="../img/arrow_left_on.png" alt="이전 그림" id="prev">
+        <div class="imgBox"><img src="../img/imgi_91_2025_winter2_top_drink01_251126.png" alt="" id="gallery"></div>
+        <img src="../img/arrow_right_on.png" alt="다음 그림" id="next">
+    </div>
+    <script>
+        let num = 1
+        const totalImg = 7
+        const gallery = document.querySelector("#gallery")
+
+        function nextGallery(){
+            num ++
+            if(num > totalImg){
+                num = 1
+            }
+            gallery.src = `../img/imgi_9${num}_2025_winter2_top_drink0${num}_251126.png`
+            return false
+        }
+        document.querySelector("#next").addEventListener("click", () => nextGallery())
+
+        function prevGallery(){
+            num --
+            if(num < 1){
+                num = totalImg
+            }
+            gallery.src = `../img/imgi_9${num}_2025_winter2_top_drink0${num}_251126.png`
+            return false
+        }
+        /*
+        7 6 5 4 3 2 1 "0"
+		              "7" 6 5 4 3 2 1
+
+        num이 -1씩 작아지다가 0이 되는 순간 7(=totalImg)이여야 함
+         */
+        document.querySelector("#prev").addEventListener("click", () => prevGallery())
+    </script>
+</body>
+</html>

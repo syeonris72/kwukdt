@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommended Drink Clock</title>
+    <style>
+        figure{
+            width: 330px;
+            height: 330px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="clock">00:00:00</h1>
+    <h2>현재 시각</h2>
+    <script>
+        const updateClock = () => {
+            const now = new Date()
+
+            const hours = now.getHours().toString().padStart(2, '0')
+            const minutes = now.getMinutes().toString().padStart(2, '0')
+            const seconds = now.getSeconds().toString().padStart(2, '0')
+
+            
+            const timeString = `${hours}:${minutes}:${seconds}`
+            const clockElemet = document.querySelector('#clock')
+            clockElemet.textContent = timeString
+        }
+        setInterval(updateClock, 1000)
+    </script>
+    <hr>
+    <figure>
+        <img src="../img/imgi_91_2025_winter2_top_drink01_251126.png" id="mainBanner" alt="">
+        <figcaption>오늘의 추천 음료</figcaption>
+    </figure>
+    <script>
+        const changeImage = () => {
+            const banner = [1, 2, 3, 4, 5, 6]
+            const drinkLi = ["뱅쇼", "아메리카노", "모카 라떼", "바닐라 라떼", "말차 라떼", "딸기 쉐이크"]
+            const today = new Date()
+            const hours = today.getHours()
+            const iNum = Math.floor(hours / 4)
+
+            const mainImg = document.querySelector('#mainBanner')
+            const caption = document.querySelector('figcaption')
+
+            if(mainImg){
+                mainImg.src = `../img/imgi_9${banner[iNum]}_2025_winter2_top_drink0${banner[iNum]}_251126.png`
+            }
+
+            if(caption){
+                caption.textContent= `${hours}시에 추천하는 음료: ${drinkLi[iNum]}`
+            }
+        }
+        setInterval(changeImage,60000)
+        changeImage()
+    </script>
+</body>
+</html>

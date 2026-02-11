@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>손님 맞이</title>
+</head>
+<body>
+    <button id="btn-enter">들어오기</button>
+    <button id="btn-exit">나가기</button>
+    <script>
+        function greet(message){
+            alert(message)
+        }
+        const enterBtn = document.querySelector("#btn-enter")
+        const exitBtn = document.querySelector("#btn-exit")
+
+        enterBtn.addEventListener("click", () => greet("안녕하세요."))
+        exitBtn.addEventListener("click", () => greet("안녕히 가세요."))
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript love</title>
+    <script>
+        window.onload = () => {
+            const btnYes = document.querySelector("#btnYes")
+            const btnNo = document.querySelector("#btnNo")
+            console.log(btnYes)
+            console.log(btnNo)
+
+            function iLovejs(answer){
+                let num = Math.floor(Math.random()*3)
+                if (answer === 'yes') {
+                    const liYes = ['멋집니다!', '지금처럼 열심히~', 'Good 입니다!']
+                    alert('와와! ' + liYes[num])
+                } else{
+                    const liNo = ['그만 놀아요!', '분발하세요~', '재미없습니다!']
+                    alert('참나! ' + liNo[num])
+                }
+            }
+            btnYes.onclick = () => iLovejs("yes")
+            btnNo.onclick = () => iLovejs("no")
+        }
+    </script>
+</head>
+<body>
+    <h1>당신은 자바스크립트를 좋아하십니까?</h1>
+    <button id="btnYes">네</button>
+    <button id="btnNo">아니오</button>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+</head>
+<body>
+    <script>
+        let count = 0
+        const changeColor = () => {
+            if (++count > 50) {
+                clearInterval(intervalID)
+                console.log('변경 종료!')
+                return
+            }
+            const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`
+            document.body.style.backgroundColor = randomColor
+        }
+        let intervalID = setInterval(changeColor, 250)
+    </script>
+</body>
+</html>

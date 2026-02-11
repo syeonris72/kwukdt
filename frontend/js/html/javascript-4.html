@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Gallery</title>
+    <style>
+        .imgBox{
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            width: 330px;
+            height: 330px;
+        }
+    </style>
+</head>
+<body>
+    <div id="galleryWrap">
+        <h1>이미지 넘기기</h1>
+        <img src="../img/arrow_left_on.png" alt="이전 그림" id="prev">
+        <div class="imgBox"><img src="../img/imgi_91_2025_winter2_top_drink01_251126.png" alt="" id="gallery"></div>
+        <img src="../img/arrow_right_on.png" alt="다음 그림" id="next">
+    </div>
+    <script>
+        let num = 1
+        const totalImg = 7
+        const gallery = document.querySelector("#gallery")
+
+        function moveGallery(direction){
+            if(direction === "next"){
+                num ++
+                if(num > totalImg){
+                    num = 1
+                }
+            }
+            else{
+                num --
+                if(num < 1){
+                    num = totalImg
+                }
+            }
+            console.log(num)
+            gallery.src = `../img/imgi_9${num}_2025_winter2_top_drink0${num}_251126.png`
+            return false
+        }
+        document.querySelector("#prev").addEventListener("click", () => moveGallery("prev"))
+        document.querySelector("#next").addEventListener("click", () => moveGallery("next"))
+    </script>
+</body>
+</html>
