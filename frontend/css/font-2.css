@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+.txt1{
+    color:red;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Dotum, "돋움", sans-serif;}
+
+.txt2{
+    color:lime;
+    font: bold 25px /1.2 Gullim, "굴림", sans-serif;
+    text-indent: 50px;
+    white-space:pre;}
+
+.txt3{
+    color:blue;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: Gullim, "굴림", sans-serif;
+    text-indent: 50px;
+    white-space:pre;}
+
+.txt3_1{
+    color:olive;
+    font-size: 30px;
+    font-family: HY gothic-extra, "HY견고딕", sans-serif;
+    text-decoration: line-through;
+    white-space:pre;}
+
+.txt4{
+    color: #f00;
+    text-align: center;}
+
+.txt5{
+    font: 20px Gungshu, "궁서", sans-serif;}
+
+.txt6_1{
+    color: red;
+    font-size: 25px;}
+
+.txt7{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.2;
+    font-family: "바탕체", sans-serif;
+    font-style: italic;}
+
+
+.txt8{
+    color:lime;
+    font-size: 20px;
+    font-family: Dotum, "돋움", sans-serif;
+    text-decoration: underline;}
+
+.txt9{
+    color:#f0f;
+    font-size: 20px;
+    font-family: HY gothic-extra, "HY견고딕", sans-serif;
+    text-decoration: underline;
+    white-space:pre;}
+
+.txt10{
+    color:red;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: Dotum, "돋움", sans-serif;
+    text-decoration: underline;
+    text-align: right;}

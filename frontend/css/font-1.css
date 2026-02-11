@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.size30{font-size: 30px;}
+.size16{font-size: 16px;}
+
+.family_dotum{font-family: Dotum, "돋움", sans-serif;}
+.family{font-family: serif;}
+
+.weight{font-weight: bold;}
+strong, h3{font-weight: normal;}
+
+.style{font-style: italic;}
+em, address{font-style: normal;}
+
+.variant{font-variant: small-caps;}
+
+.line{line-height: 300%;}
+
+.font{font: bold italic small-caps 20px /1.5 Dotum,"돋움", sans-serif;}
+
+.indent{text-indent: 50px;}
+
+.underline{text-decoration: underline;}
+
+.go{text-decoration: none; color:gold;}
+
+.align{text-align: center;}
+
+.letter{letter-spacing: 30px;}
+.word{word-spacing: 30px;}
+
+.top{vertical-align: top;}
+.middle{vertical-align: middle;}
+.bottom{vertical-align: bottom;}
+
+.upper{text-transform: uppercase;}
+.lower{text-transform: lowercase;}
+.capital{text-transform: capitalize;}
+
+.pre{white-space: pre;}
+.nowrap{white-space: nowrap;}

@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+div{background-color:floralwhite;}
+body p{color:darkslateblue;}
+div.parent>p{color:darkturquoise;}
+div.parent>div.child>p{color:deepskyblue;}

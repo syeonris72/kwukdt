@@ -1,0 +1,55 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 12px;
+    font-family: dotum, "돋움", sans-serif;
+}
+h2{
+    border-bottom: 1px solid #ccc;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+ul, li{
+    list-style: none;
+}
+li{
+    margin-top: 10px;
+}
+b{
+    color:darkorchid;
+    font-weight: normal;
+    padding-right: 5px;
+}
+.notice{
+    width: 300px;
+    margin: 30px auto;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p>a{
+    display: block;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../html/images/download.png) no-repeat 0 0;
+    width: 21px;
+    height: 20px;
+}
+p>a>span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -99999px;
+    overflow: hidden;
+}

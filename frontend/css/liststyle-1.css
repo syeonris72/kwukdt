@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+ul.in{
+    list-style-position: inside;
+}
+
+ul.out{
+    list-style-position: outside;
+}
+
+.none{
+    list-style-type: none;
+}
+
+.disc{
+    list-style-type: disc;
+}
+
+.circle{
+    list-style-type: circle;
+}
+
+.square{
+    list-style-type: square;
+}
+
+.upperA{
+    list-style-type: upper-alpha;
+}
+
+.lowerA{
+    list-style-type: lower-alpha;
+}
+
+.upperR{
+    list-style-type: upper-roman;
+}
+
+.lowerR{
+    list-style-type: lower-roman;
+}
+
+ul.marker1{
+    list-style-image: url(../html/images/icon_home.png);
+}
+
+li.marker2{
+    list-style-image: url(../html/images/imgi_84_icon_magnifier_black.png);
+}

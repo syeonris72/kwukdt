@@ -1,0 +1,36 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 12px;
+    font-family: Dotum, "돋움", sans-serif;
+    font-weight: bold;
+    line-height: 150%;
+}
+div{
+    width: 500px;
+    border: 3px double green;
+    box-sizing: border-box;
+    background-color: palegoldenrod;
+    margin: 20px auto;
+}
+div>h3{
+    text-align: center;
+    border-bottom: 3px double green;
+    background-color: palegoldenrod;
+    padding: 10px 0;
+}
+div>ul{
+    list-style: none;
+    text-indent: 20px;
+    padding: 10px 0;
+    background-color: white;
+}
+.line{
+    border-bottom: 1px dotted green;
+}
+.eng{
+    color: blue;
+}

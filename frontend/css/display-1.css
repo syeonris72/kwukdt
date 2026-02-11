@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+body{
+    text-align: center;
+}
+
+ul>li{
+    list-style: none;
+}
+
+ul#over1>li{
+    display: inline;
+}
+
+ul#over2>li{
+    display: block;
+}
+
+ul#over3>li{
+    display: inline-block;
+}
+
+ul>li>a{
+    color: black;
+}
