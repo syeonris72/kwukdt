@@ -1,0 +1,1 @@
+document.write("1. 재밌는 자바스크립트")
