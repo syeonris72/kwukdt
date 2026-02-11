@@ -1,0 +1,87 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #000;
+}
+#container{
+    background: url(../../html/images/imgi_143_2026_new_year_pick_bg_251226.jpg) no-repeat;
+    background-attachment: fixed;
+    padding: 3% 0;
+    background-size: 100%;
+}
+#container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.section1{
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 30px 1 50px;
+}
+body{
+    font-size: 14px;
+    color: #333;
+    font-family: "Noto Sans KR";
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+div.txtbox{
+    color: #FFF;
+    position: absolute;
+    top: -50px;
+    text-align: right;
+    transition: transform 3s ease 0s;
+}
+div.txtbox:hover{
+    transform: translate(-1000px)
+}
+div.txtbox>h1{
+    font-size: 60px;
+    font-weight: 500;
+    
+}
+div.txtbox>h2{
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+div.txtbox>h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+div.txtbox>p:first-of-type{
+    margin-top: 20px;
+}
+div.txtbox>p:last-of-type{
+    margin-bottom: 50px;
+}
+div>a{
+    color: #FFF;
+    position: absolute;
+    top: 400px;
+    left: 235px;
+    text-align: right;
+    transition: transform 5s ease 0s;
+}
+div>a{
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 1% 2%;
+    transition: all 1s ease 0s;
+}
+div>a:hover{
+    background-color: #FFF;
+    color: #000;
+    text-decoration: underline;
+}
+div.imgbox{
+    float: right;
+}
