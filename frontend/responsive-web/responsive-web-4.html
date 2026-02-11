@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Shifter</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrap{
+            display: flex;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        #box_a{
+            width: 20%;
+            height: 400px;
+            background-color: #fcb354;
+        }
+        #box_group{
+            width: 80%;
+        }
+        #box_b{
+            height: 200px;
+            background-color: #f1779e;
+        }
+        #box_c{
+            height: 200px;
+            background-color: #24bbaf;
+        }
+        @media screen and (max-width: 1024px){
+            #wrap{
+                width: 90%;
+            }
+        }
+        @media screen and (max-width: 430px){
+            #wrap{
+                width: 100%;
+                flex-direction: column;
+            }
+            #box_a, #box_group{
+                width: 100%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="box_a"></div>
+        <div id="box_group">
+            <div id="box_b">Text</div>
+            <div id="box_c">Text</div>
+        </div>
+    </div>
+</body>
+</html>
